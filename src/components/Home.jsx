@@ -1,11 +1,10 @@
 import React from "react";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
-  return (
-    <div>
-      <h2>home</h2>
-    </div>
-  );
+  const coffees = useLoaderData();
+  console.log(coffees);
+  return <div></div>;
 };
 
 export default Home;
